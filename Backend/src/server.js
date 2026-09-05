@@ -1,15 +1,23 @@
 import express from "express";
 import path from "path";
+import cors from "cors";
 import { connectDB } from "./lib/db.js";
 
 import { ENV } from "./lib/env.js";
+import {serve} from "./lib/inngest.js";
 
 const app = express();
 
 const __dirname = path.resolve();
 
-console.log(ENV.PORT);
-console.log(ENV.DB_URL);
+//middleware
+app.use(express.json());
+//credentials: true allows the server to accept requests from the client with credentials (like cookies, authorization headers, or TLS client certificates). This is important for scenarios where the client and server are on different domains and need to share authentication information.
+app.use(cors({origin:ENV.CLIENT_URL, credentials:true }));
+
+
+app.use("api/inngest" , serve ({client: inngest , functions}));
+
 
 app.get("/health" , (req , res) =>{2
     res.status(200).json({message: "API is up and running"});
