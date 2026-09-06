@@ -17,14 +17,15 @@ app.use(express.json());
 app.use(cors({origin:ENV.CLIENT_URL, credentials:true }));
 
 
-app.use("/api/inngest" , serve ({client: inngest , functions: [someFunction]}) );
+
+app.use("/api/inngest" , serve({ client: inngest, functions}));
 
 
-app.get("/health" , (req , res) =>{2
+app.get("/health" , (req , res) =>{
     res.status(200).json({message: "API is up and running"});
 });
 
-app.get("/books" , (req , res) =>{2
+app.get("/books" , (req , res) =>{
     res.status(200).json({message: "This is a book  endpoint"});
 });
 

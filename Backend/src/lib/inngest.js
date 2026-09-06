@@ -36,4 +36,4 @@ const  deleteUsersFromDb = inngest.createFunction(
 // tdo : do sth else
 );
 
-export const functions = {syncUser, deleteUsersFromDb};
+export const functions = [syncUser, deleteUsersFromDb];
