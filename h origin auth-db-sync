@@ -1,0 +1,5 @@
+[33m68c3464[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mauth-db-sync[m[33m, [m[1;31morigin/auth-db-sync[m[33m)[m Merge branch 'auth-db-sync' of https://github.com/deepsingh-co/TalentIQ into auth-db-sync
+[33me6bb8ad[m fix: correct import statement for connectDB in inngest.js
+[33m74fd3e8[m Merge pull request #2 from deepsingh-co/main
+[33mebfd838[m Merge pull request #1 from deepsingh-co/auth-db-sync
+[33mcf0aaf6[m fix: correct import statements for Inngest in server.js
