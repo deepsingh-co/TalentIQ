@@ -9,6 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "engines": {
+  "node": ">=20.9.0"
+},
+
   "dependencies": {
     "@clerk/clerk-react": "^5.61.9",
     "@clerk/react": "^6.15.1",
