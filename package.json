@@ -8,7 +8,12 @@
     "start": "npm run start --prefix Backend "
 
   },
-  "repository": {
+
+  "engines": {
+  "node": ">=20.9.0"
+  },
+
+"repository": {
     "type": "git",
     "url": "git+https://github.com/deepsingh-co/TalentIQ.git"
   },
