@@ -9,7 +9,9 @@
 
   },
   "engines": {
-  "node": ">=20.9.0"
+  "node": ">=22"
+}
+
 },
 
   "repository": {
