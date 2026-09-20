@@ -1,27 +1,13 @@
 {
-  "name": "talentiq",
+  "name": "talent-iq",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix Backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npm run start --prefix Backend "
-
-  },
-
-  "engines": {
-  "node": ">=20.9.0"
-  },
-
-"repository": {
-    "type": "git",
-    "url": "git+https://github.com/deepsingh-co/TalentIQ.git"
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/deepsingh-co/TalentIQ/issues"
-  },
-  "homepage": "https://github.com/deepsingh-co/TalentIQ#readme"
+  "description": ""
 }
