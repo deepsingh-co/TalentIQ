@@ -9,6 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "engines": {
+  "node": ">=20.9.0"
+},
+
   "dependencies": {
     "@clerk/clerk-react": "^5.53.3",
     "@monaco-editor/react": "^4.7.0",
